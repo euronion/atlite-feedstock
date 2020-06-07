@@ -1,6 +1,6 @@
 {% set name = "atlite" %}
-{% set version = "0.0.2" %}
-{% set sha256 = "2e53da5900597aeb38e50615b3d725e1241b7215af3ce8541fa230d8082bce57" %}
+{% set version = "0.0.3" %}
+{% set sha256 = "30c7e446d0804d7ca0e56856dedfd0a90e9fc71c539369a47bc12b2f488fc439" %}
 
 package:
   name: "{{ name|lower }}"
@@ -40,8 +40,8 @@ test:
     - atlite
 
 about:
-  home: https://github.com/FRESNA/atlite
-  license: GPL-3.0
+  home: https://github.com/PyPSA/atlite
+  license: GPL-3.0-or-later
   license_family: GPL
   license_file: LICENSE.txt
   summary: Atlite converts climate weather data for Power Systems Analysis
@@ -52,7 +52,7 @@ about:
       power and heating demand time series). It is designed to work with big
       datasets, such as hourly global weather data over several years at spatial
       resolutions down to e.g. 0.1 x 0.1 degree resolution.
-  dev_url: https://github.com/FRESNA/atlite
+  dev_url: https://github.com/PyPSA/atlite
 
 extra:
   recipe-maintainers:
