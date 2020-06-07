@@ -20,6 +20,7 @@ requirements:
     - python >=3
     - pip
     - six
+    - setuptools_scm
   run:
     - python >=3
     - six
