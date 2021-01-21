@@ -1,10 +1,10 @@
 {% set name = "atlite" %}
-{% set version = "0.0.3" %}
-{% set sha256 = "30c7e446d0804d7ca0e56856dedfd0a90e9fc71c539369a47bc12b2f488fc439" %}
+{% set version = "0.0.4" %}
+{% set sha256 = "b4cd0c6cfd2f05685c9e8938af40e3b46ff9bc429972384bba85e6d54a5fb626" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
@@ -12,7 +12,7 @@ source:
 
 build:
   number: 0
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv "
+  script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv '
   noarch: python
 
 requirements:
@@ -47,12 +47,12 @@ about:
   license_file: LICENSE.txt
   summary: Atlite converts climate weather data for Power Systems Analysis
   description: |
-      Atlite is a free software, xarray-based Python library for converting
-      weather data (such as wind speeds, solar radiation, temperature and
-      runoff) into power systems data (such as wind power, solar power, hydro
-      power and heating demand time series). It is designed to work with big
-      datasets, such as hourly global weather data over several years at spatial
-      resolutions down to e.g. 0.1 x 0.1 degree resolution.
+    Atlite is a free software, xarray-based Python library for converting
+    weather data (such as wind speeds, solar radiation, temperature and
+    runoff) into power systems data (such as wind power, solar power, hydro
+    power and heating demand time series). It is designed to work with big
+    datasets, such as hourly global weather data over several years at spatial
+    resolutions down to e.g. 0.1 x 0.1 degree resolution.
   dev_url: https://github.com/PyPSA/atlite
 
 extra:

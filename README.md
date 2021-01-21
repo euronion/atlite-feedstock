@@ -3,11 +3,13 @@ About atlite
 
 Home: https://github.com/PyPSA/atlite
 
-Package license: GPL-3.0
+Package license: GPL-3.0-or-later
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/atlite-feedstock/blob/master/LICENSE.txt)
 
 Summary: Atlite converts climate weather data for Power Systems Analysis
+
+Development: https://github.com/PyPSA/atlite
 
 Atlite is a free software, xarray-based Python library for converting
 weather data (such as wind speeds, solar radiation, temperature and
