@@ -1,6 +1,6 @@
 {% set name = "atlite" %}
-{% set version = "0.0.4" %}
-{% set sha256 = "b4cd0c6cfd2f05685c9e8938af40e3b46ff9bc429972384bba85e6d54a5fb626" %}
+{% set version = "0.2.0" %}
+{% set sha256 = "2da773e4a333e9238bb1c5e96f5affcc4acc47bcbabe52aaba5214fefe4b18df" %}
 
 package:
   name: {{ name|lower }}
@@ -23,18 +23,18 @@ requirements:
     - setuptools_scm
   run:
     - python >=3
-    - six
     - numpy
     - scipy
     - pandas >=0.22
-    - bottleneck
-    - numexpr
     - xarray >=0.11.2
     - dask >=0.18.0
     - rasterio
     - shapely
     - progressbar2
     - geopandas
+    - yaml
+    - cdsapi
+    - pyproj
 
 test:
   imports:
@@ -59,4 +59,3 @@ extra:
   recipe-maintainers:
     - coroa
     - FabianHofmann
-   

@@ -124,5 +124,6 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@FabianHofmann](https://github.com/FabianHofmann/)
 * [@coroa](https://github.com/coroa/)
 
