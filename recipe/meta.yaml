@@ -11,7 +11,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv '
   noarch: python
 
@@ -26,10 +26,11 @@ requirements:
     - numpy
     - scipy
     - pandas >=0.22
-    - xarray >=0.11.2
+    - xarray >=0.16
     - dask >=0.18.0
     - rasterio
     - shapely
+    - netcdf4
     - progressbar2
     - geopandas
     - yaml
