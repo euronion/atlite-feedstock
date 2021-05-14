@@ -27,7 +27,7 @@ requirements:
     - scipy
     - pandas >=0.22
     - xarray >=0.16.2
-    - dask >=0.18.0, !=2021.04.
+    - dask >=0.18.0, !=2021.04
     - rasterio
     - shapely
     - netcdf4
