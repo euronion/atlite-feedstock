@@ -11,7 +11,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv '
   noarch: python
 
@@ -25,17 +25,23 @@ requirements:
     - python >=3
     - numpy
     - scipy
-    - pandas >=0.22
+    - pandas >=0.25
+    - bottleneck
+    - numexpr
     - xarray >=0.16.2
-    - dask >=0.18.0, !=2021.04
-    - rasterio
-    - shapely
     - netcdf4
-    - progressbar2
-    - geopandas
+    - dask >=0.18.0, <2021.04
+    - toolz
+    - requests
     - yaml
+    - rasterio >=1.0
+    - shapely
+    - progressbar2
+    - tqdm
+    - pyproj>=2
+    - geopandas
     - cdsapi
-    - pyproj
+    - pytest
 
 test:
   imports:
