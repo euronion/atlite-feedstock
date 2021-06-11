@@ -1,6 +1,6 @@
 {% set name = "atlite" %}
-{% set version = "0.2.3" %}
-{% set sha256 = "c1cf32ec638d0886a9bcd24eae7b730b6926c2f7815a666831d4870f8a473eeb" %}
+{% set version = "0.2.4" %}
+{% set sha256 = "dd71a852eb01a8416eca5c6f96be31218395c93db2698cdd20b26da9cd3e015b" %}
 
 package:
   name: {{ name|lower }}
@@ -11,7 +11,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv '
   noarch: python
 
