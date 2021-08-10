@@ -38,7 +38,7 @@ requirements:
     - shapely
     - progressbar2
     - tqdm
-    - pyproj>=2
+    - pyproj >=2
     - geopandas
     - cdsapi
     - pytest
