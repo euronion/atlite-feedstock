@@ -11,7 +11,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv '
   noarch: python
 
@@ -34,7 +34,7 @@ requirements:
     - toolz
     - requests
     - yaml
-    - rasterio >=1.0
+    - rasterio >=1.3
     - shapely
     - progressbar2
     - tqdm
