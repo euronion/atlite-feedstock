@@ -1,6 +1,6 @@
 {% set name = "atlite" %}
-{% set version = "0.2.7" %}
-{% set sha256 = "3cd0cbd20f30055d1bf96c06a4ff0346b610dcfdb7f902079b5f59c630907b3f" %}
+{% set version = "0.2.9" %}
+{% set sha256 = "5b305564071d207fa47974eb68c09b5f499d6ff1aa6363e9cd2a85f012d0a77c" %}
 
 package:
   name: {{ name|lower }}
@@ -28,7 +28,7 @@ requirements:
     - pandas >=1.1
     - bottleneck
     - numexpr
-    - xarray >=0.16.2
+    - xarray >=0.20
     - netcdf4
     - dask >=2021.10
     - toolz
