@@ -1,11 +1,11 @@
-About atlite
-============
+About atlite-feedstock
+======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/atlite-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/PyPSA/atlite
 
 Package license: GPL-3.0-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/atlite-feedstock/blob/main/LICENSE.txt)
 
 Summary: Atlite converts climate weather data for Power Systems Analysis
 
