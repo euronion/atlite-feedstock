@@ -7,22 +7,22 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv '
   noarch: python
 
 requirements:
   host:
-    - python >=3
+    - python {{ python_min }}
     - pip
     - six
     - setuptools_scm
   run:
-    - python >=3
+    - python >={{ python_min }}
     - numpy
     - scipy
     - pandas >=1.1
@@ -44,6 +44,8 @@ requirements:
     - pytest
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - atlite
 
