@@ -17,12 +17,12 @@ build:
 
 requirements:
   host:
-    - python {{ python_min }}
+    - python >=3.10
     - pip
     - six
     - setuptools_scm
   run:
-    - python >={{ python_min }}
+    - python >=3.10
     - numpy
     - scipy
     - pandas >=1.1
@@ -45,7 +45,7 @@ requirements:
 
 test:
   requires:
-    - python {{ python_min }}
+    - python >=3.10
   imports:
     - atlite
 
