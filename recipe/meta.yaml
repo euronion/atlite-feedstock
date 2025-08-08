@@ -42,7 +42,7 @@ requirements:
     - geopandas
     - cdsapi
     - pytest
-    - cfgrib >=0.9,15.0
+    - cfgrib >=0.9.15.0
     - h5netcdf >=1.6.1
 
 test:
